@@ -23,24 +23,28 @@ namespace LoginDimensao
             SqlDataAdapter  dp = new SqlDataAdapter(query,Conexao);
             DataTable dt = new DataTable();
             dp.Fill(dt);
+            bool logou = false;
 
             if (dt.Rows.Count == 1)
             {
-                 // Verificar se a senha e valida
+                // Verificar se a senha e valida
                 if (txtSenha.Text == dt.Rows[0]["Password"].ToString())
                 {
+                    logou = true;
                     FormMenu principal = new FormMenu();
                     //FormMenu principal = new FormMenu();
                     this.Hide();
                     principal.Show();
                 }
             }
-            else
+            
+            if (! logou) 
             {
                 MessageBox.Show("Usuario ou Senha inválida", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtUser.Text = ""; //Limpa as textbox depois de serem verificadas
                 txtSenha.Text = "";
                 txtUser.Select(); //cursor ira sinalizar a primeira textbox
+                Conexao.Close();
             }
         }
     }

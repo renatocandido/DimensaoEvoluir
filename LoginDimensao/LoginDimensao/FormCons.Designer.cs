@@ -34,7 +34,6 @@
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnVolt = new System.Windows.Forms.Button();
-            this.BtnQuit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -89,7 +88,7 @@
             // 
             // BtnVolt
             // 
-            this.BtnVolt.Location = new System.Drawing.Point(137, 402);
+            this.BtnVolt.Location = new System.Drawing.Point(412, 402);
             this.BtnVolt.Name = "BtnVolt";
             this.BtnVolt.Size = new System.Drawing.Size(102, 36);
             this.BtnVolt.TabIndex = 4;
@@ -97,21 +96,11 @@
             this.BtnVolt.UseVisualStyleBackColor = true;
             this.BtnVolt.Click += new System.EventHandler(this.BtnVolt_Click);
             // 
-            // BtnQuit
-            // 
-            this.BtnQuit.Location = new System.Drawing.Point(650, 402);
-            this.BtnQuit.Name = "BtnQuit";
-            this.BtnQuit.Size = new System.Drawing.Size(102, 36);
-            this.BtnQuit.TabIndex = 5;
-            this.BtnQuit.Text = "Sair";
-            this.BtnQuit.UseVisualStyleBackColor = true;
-            // 
             // FormCons
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 449);
-            this.Controls.Add(this.BtnQuit);
             this.Controls.Add(this.BtnVolt);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
@@ -132,6 +121,5 @@
         private TextBox txtPesquisa;
         private Button BtnBusca;
         private Button BtnVolt;
-        private Button BtnQuit;
     }
 }

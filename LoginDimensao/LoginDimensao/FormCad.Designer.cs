@@ -45,7 +45,6 @@
             this.txtObs = new System.Windows.Forms.TextBox();
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.BtnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnSalvar
@@ -179,7 +178,7 @@
             // 
             // BtnVoltar
             // 
-            this.BtnVoltar.Location = new System.Drawing.Point(405, 393);
+            this.BtnVoltar.Location = new System.Drawing.Point(238, 393);
             this.BtnVoltar.Name = "BtnVoltar";
             this.BtnVoltar.Size = new System.Drawing.Size(75, 23);
             this.BtnVoltar.TabIndex = 15;
@@ -199,23 +198,12 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Dimensão Evoluir";
             // 
-            // BtnExit
-            // 
-            this.BtnExit.Location = new System.Drawing.Point(198, 393);
-            this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(75, 23);
-            this.BtnExit.TabIndex = 17;
-            this.BtnExit.Text = "Sair";
-            this.BtnExit.UseVisualStyleBackColor = true;
-            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
-            // 
             // FormCad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.BtnVoltar);
             this.Controls.Add(this.txtObs);
@@ -234,7 +222,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnSalvar);
             this.Name = "FormCad";
-            this.Text = "v";
+            this.Text = "Cadastro Paciente";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,6 +247,5 @@
         private TextBox txtObs;
         private Button BtnVoltar;
         private Label label8;
-        private Button BtnExit;
     }
 }

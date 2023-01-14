@@ -48,10 +48,5 @@ namespace LoginDimensao
             this.Hide();
             principal.Show();
         }
-
-        private void BtnQuit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
     }
 }
